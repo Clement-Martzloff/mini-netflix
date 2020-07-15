@@ -12,7 +12,6 @@ The purpose of this application is to practice code to develop different standar
 - [x] View movie details
 - [x] Manage a favorites list: add a movie, delete it etc...
 - [x] Perform research
-- [] ...
 
 ## Installation
 

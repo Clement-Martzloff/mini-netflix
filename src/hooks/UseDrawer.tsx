@@ -1,14 +1,14 @@
-import { useContext } from 'react'
-import { DrawerContext, TOGGLE_DRAWER } from '../contexts/DrawerContext'
+import { useContext } from 'react';
+import { DrawerContext, CLICK_ICON_BUTTON } from '../contexts/DrawerContext';
 
 function useDrawer() {
-  const contextValue = useContext(DrawerContext)
+	const contextValue = useContext(DrawerContext);
 
-  if (contextValue === undefined) {
-    throw new Error(`No provider for DrawerContext given`)
-  }
+	if (contextValue === undefined) {
+		throw new Error(`No provider for DrawerContext given`);
+	}
 
-  return { ...contextValue, TOGGLE_DRAWER }
+	return { ...contextValue, CLICK_ICON_BUTTON };
 }
 
-export default useDrawer
+export default useDrawer;
